@@ -804,8 +804,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 684666327761783861}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0021872097, y: -0.12692039, z: 0.02664387, w: 0.9915526}
-  m_LocalPosition: {x: 0.48524213, y: 0.004661531, z: -1.864906}
+  m_LocalRotation: {x: -0.002123505, y: -0.12703602, z: 0.027266175, w: 0.991521}
+  m_LocalPosition: {x: 3.8848958, y: 0.041893132, z: -14.916717}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1793,8 +1793,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2387744412290817112}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0049998155, y: -0.000000018411088, z: 9.6953924e-11, w: 0.99998754}
-  m_LocalPosition: {x: 0.000000029802322, y: 0.017499946, z: -1.7500013}
+  m_LocalRotation: {x: 0.004999788, y: 0.000000034583227, z: -0.0000000028872638,
+    w: 0.99998754}
+  m_LocalPosition: {x: -0.0000011920929, y: 0.13999999, z: -14.000003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4515,8 +4516,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5758326909713458642}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0049998155, y: -0.000000018411088, z: 9.6953924e-11, w: 0.99998754}
-  m_LocalPosition: {x: 0.000000029802322, y: 0.017499946, z: -1.7500013}
+  m_LocalRotation: {x: 0.004999786, y: 0.000000081956365, z: -0.000000003463355, w: 0.99998754}
+  m_LocalPosition: {x: -0.0000011920929, y: 0.13999999, z: -14.000003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4801,12 +4802,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c0626e3ced11746a25114011340f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterController: {fileID: 696958581235975014}
-  _playerCamera: {fileID: 7821580595182566535}
-  runAcceleration: 100
-  runSpeed: 100
-  drag: 30
-  movingThreshold: 0.01
+  characterController: {fileID: 0}
+  playerCamera: {fileID: 0}
+  movementAcceleration: 35
+  maxMovementSpeed: 4
+  movementDrag: 20
+  movementThreshold: 0.01
+  gravity: -9.81
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 0
   lookSenseH: 0.1
   lookSenseV: 0.1
   lookLimitV: 89
@@ -5745,8 +5750,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7466519990907506912}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0021872097, y: -0.12692039, z: 0.02664387, w: 0.9915526}
-  m_LocalPosition: {x: 0.48524213, y: 0.004661531, z: -1.864906}
+  m_LocalRotation: {x: -0.16774713, y: -0.06545765, z: -0.0060269153, w: 0.9836361}
+  m_LocalPosition: {x: 71.46503, y: -185.27197, z: -502.03452}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5785,7 +5790,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60.000004
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
