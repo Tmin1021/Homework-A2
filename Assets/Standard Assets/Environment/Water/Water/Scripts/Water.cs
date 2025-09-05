@@ -37,7 +37,7 @@ namespace UnityStandardAssets.Water
         // camera. We render reflections / refractions and do other updates here.
         // Because the script executes in edit mode, reflections for the scene view
         // camera will just work!
-        public void OnWillRenderObject()
+        public void LateUpdate()
         {
             if (!enabled || !GetComponent<Renderer>() || !GetComponent<Renderer>().sharedMaterial ||
                 !GetComponent<Renderer>().enabled)
